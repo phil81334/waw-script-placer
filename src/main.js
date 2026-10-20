@@ -205,7 +205,9 @@ $('form').addEventListener('submit', async (event) => {
 });
 
 $('about-button').onclick = () => {
-  return $('about').showModal();
+  $('about').showModal();
+  $('repo-url').focus();
+  $('repo-url').select();
 };
 $('about-close').onclick = () => {
   return $('about').close();
