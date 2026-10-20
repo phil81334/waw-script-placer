@@ -1,0 +1,276 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"diffusefraction" "0.3"
+"sunlight" "1.2"
+"suncolor" "0.59 0.79 1"
+"sundirection" "-146.5 311.8 0"
+"diffuserefraction" "0.3"
+"sundiffusecolor" "0.75 0.75 0.75"
+"ambient" "0.20"
+"_color" "0.2 0.45 1"
+"sunisprimarylight" "1"
+"sunradiosity" "1.2"
+"specularcolorscale" "30"
+"reflection_color_correction" "default"
+"classname" "worldspawn"
+// brush 0
+{
+ ( 192 128 0 ) ( 184 128 0 ) ( 184 -136 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16383.871 16384 312 0 0 0
+ ( 184 -136 96 ) ( 184 128 96 ) ( 192 128 96 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 312 0 0 0
+ ( 184 -192 8 ) ( 192 -192 8 ) ( 192 -192 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384.063 16384 312 0 0 0
+ ( 192 -136 8 ) ( 192 128 8 ) ( 192 128 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 192 192 8 ) ( 184 192 8 ) ( 184 192 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16383.945 16384 312 0 0 0
+ ( 184 192 96 ) ( 184 -72 96 ) ( 184 -72 88 ) case512green 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 1
+{
+ ( 136 184 0 ) ( 136 192 0 ) ( -128 192 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16383.908 16384 -64 -8 -90 0
+ ( -128 192 96 ) ( 136 192 96 ) ( 136 184 96 ) caulk 64 64 0 0 0 0 lightmap_gray 16384.086 16384 -64 -8 -90 0
+ ( -184 184 96 ) ( -184 176 96 ) ( -184 176 88 ) caulk 64 64 0 0 0 0 lightmap_gray 16384.074 -16384 -64 0 180 0
+ ( -80 184 8 ) ( 184 184 8 ) ( 184 184 0 ) case512green 128 128 0 0 0 0 lightmap_gray 16384 16384 8 0 0 0
+ ( 184 184 96 ) ( 184 192 96 ) ( 184 192 88 ) caulk 64 64 0 0 0 0 lightmap_gray 16383.814 -16384 -64 0 180 0
+ ( 136 192 8 ) ( -128 192 8 ) ( -128 192 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 8 0 0 0
+}
+// brush 2
+{
+ ( 136 -192 0 ) ( 136 -184 0 ) ( -128 -184 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384.08 16384 312 -8 -90 0
+ ( -128 -184 96 ) ( 136 -184 96 ) ( 136 -192 96 ) caulk 64 64 0 0 0 0 lightmap_gray 16384.086 16384 312 -8 -90 0
+ ( -184 -184 96 ) ( -184 -192 96 ) ( -184 -192 88 ) caulk 64 64 0 0 0 0 lightmap_gray 16383.91 -16384 312 0 180 0
+ ( -200 -192 8 ) ( 64 -192 8 ) ( 64 -192 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 8 0 0 0
+ ( 184 -192 96 ) ( 184 -184 96 ) ( 184 -184 88 ) caulk 64 64 0 0 0 0 lightmap_gray 16384.018 -16384 312 0 180 0
+ ( 136 -184 8 ) ( -128 -184 8 ) ( -128 -184 0 ) case512green 128 128 0 0 0 0 lightmap_gray 16384 16384 8 0 0 0
+}
+// brush 3
+{
+ ( -184 128 0 ) ( -192 128 0 ) ( -192 -136 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16383.904 16384 -64 0 0 0
+ ( -192 -136 96 ) ( -192 128 96 ) ( -184 128 96 ) caulk 64 64 0 0 0 0 lightmap_gray 16383.904 16384 -64 0 0 0
+ ( -192 -192 8 ) ( -184 -192 8 ) ( -184 -192 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16383.979 16384 -64 0 0 0
+ ( -184 -136 96 ) ( -184 128 96 ) ( -184 128 88 ) case512green 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -184 192 8 ) ( -192 192 8 ) ( -192 192 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16383.939 16384 -64 0 0 0
+ ( -192 128 8 ) ( -192 -136 8 ) ( -192 -136 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 4
+{
+ ( 184 184 0 ) ( -184 184 0 ) ( -184 -184 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -176 -184 8 ) ( -176 184 8 ) ( 192 184 8 ) case512green 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -184 -184 96 ) ( 184 -184 96 ) ( 184 -184 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 184 -184 96 ) ( 184 184 96 ) ( 184 184 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 184 184 96 ) ( -184 184 96 ) ( -184 184 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -184 184 96 ) ( -184 -184 96 ) ( -184 -184 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 5
+{
+ ( 240 256 -48 ) ( -272 256 -48 ) ( -272 -256 -48 ) lightgrid_volume 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -256 -256 144 ) ( -256 256 144 ) ( 256 256 144 ) lightgrid_volume 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -256 -256 88 ) ( 256 -256 88 ) ( 256 -256 24 ) lightgrid_volume 64 64 0 0 0 0 lightmap_gray 16384 16384 0 -16 0 0
+ ( 256 -256 88 ) ( 256 256 88 ) ( 256 256 24 ) lightgrid_volume 64 64 0 0 0 0 lightmap_gray 16384 16384 0 -16 0 0
+ ( 256 256 88 ) ( -256 256 88 ) ( -256 256 24 ) lightgrid_volume 64 64 0 0 0 0 lightmap_gray 16384 16384 0 -16 0 0
+ ( -256 256 88 ) ( -256 -256 88 ) ( -256 -256 24 ) lightgrid_volume 64 64 0 0 0 0 lightmap_gray 16384 16384 0 -16 0 0
+}
+}
+// entity 1
+{
+"script_noteworthy" "zombie_spawner"
+"spawnflags" "3"
+"script_forcespawn" "1"
+"count" "9999"
+"targetname" "start_zone_spawners"
+"origin" "-0.1 87.4 8.0"
+"angles" "0 270 0"
+"export" "1"
+"model" "char_ger_wrmcht_fullbody1"
+"classname" "actor_axis_zombie_ger_ber_sshonor"
+}
+// entity 2
+{
+"origin" "0.0 0.0 88.0"
+"classname" "reflection_probe"
+}
+// entity 3
+{
+"target" "start_zone_spawners"
+"classname" "info_volume"
+"targetname" "start_zone"
+// brush 0
+{
+ ( -168 184 8 ) ( -192 184 8 ) ( -192 168 8 ) volume 64 64 -24 -64 0 0 lightmap_gray 16384 16384 -24 -64 0 0
+ ( -184 168 96 ) ( -184 184 96 ) ( -160 184 96 ) volume 64 64 -24 -64 0 0 lightmap_gray 16384 16384 -24 -64 0 0
+ ( -240 -184 96 ) ( -216 -184 96 ) ( -216 -184 80 ) volume 64 64 -24 0 0 0 lightmap_gray 16384 16384 -24 0 0 0
+ ( 184 168 96 ) ( 184 184 96 ) ( 184 184 80 ) volume 64 64 64 0 0 0 lightmap_gray 16384.043 16384 64 0 0 0
+ ( -160 184 96 ) ( -184 184 96 ) ( -184 184 80 ) volume 64 64 -24 0 0 0 lightmap_gray 16384 16384 -24 0 0 0
+ ( -184 184 96 ) ( -184 168 96 ) ( -184 168 80 ) volume 64 64 64 0 0 0 lightmap_gray 16384 16384 64 0 0 0
+}
+}
+// entity 4
+{
+"script_string" "riser"
+"script_noteworthy" "zombie_spawner"
+"spawnflags" "3"
+"script_forcespawn" "1"
+"count" "9999"
+"targetname" "start_zone_spawners"
+"origin" "-0.4 -87.9 8.0"
+"angles" "0 90 0"
+"export" "2"
+"model" "char_ger_wrmcht_fullbody1"
+"classname" "actor_axis_zombie_ger_ber_sshonor"
+}
+// entity 5
+{
+"origin" "-64.0 -24.0 8.0"
+"script_noteworthy" "find_flesh"
+"targetname" "start_zone_spawners_rise"
+"angles" "0 90 0"
+"classname" "script_struct"
+}
+// entity 6
+{
+"origin" "0.0 -24.0 8.0"
+"script_noteworthy" "find_flesh"
+"targetname" "start_zone_spawners_rise"
+"angles" "0 90 0"
+"classname" "script_struct"
+}
+// entity 7
+{
+"classname" "script_struct"
+"angles" "0 90 0"
+"targetname" "start_zone_spawners_rise"
+"script_noteworthy" "find_flesh"
+"origin" "64.0 -24.0 8.0"
+}
+// entity 8
+{
+"origin" "-64.0 128.0 8.0"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"spawnflags" "3"
+"targetname" "zombie_spawner_dog_init"
+"angles" "0 270 0"
+"export" "3"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 9
+{
+"classname" "script_struct"
+"origin" "128.0 96.0 32.0"
+"angles" "0 225 0"
+"targetname" "start_zone_spawners_dog"
+}
+// entity 10
+{
+"classname" "script_struct"
+"origin" "128.0 -96.0 24.0"
+"angles" "0 135 0"
+"targetname" "start_zone_spawners_dog"
+}
+// entity 11
+{
+"classname" "script_struct"
+"origin" "-128.0 -96.0 24.0"
+"angles" "0 45 0"
+"targetname" "start_zone_spawners_dog"
+}
+// entity 12
+{
+"classname" "script_struct"
+"origin" "-128.0 96.0 24.0"
+"angles" "0 315 0"
+"targetname" "start_zone_spawners_dog"
+}
+// entity 13
+{
+"targetname" "playable_area"
+"classname" "trigger_multiple"
+// brush 0
+{
+ ( -160 184 8 ) ( -184 184 8 ) ( -184 160 8 ) trigger 64 64 -80 -48 0 0 lightmap_gray 16384 16384 -80 -48 0 0
+ ( -184 160 96 ) ( -184 184 96 ) ( -160 184 96 ) trigger 64 64 -80 -48 0 0 lightmap_gray 16384 16384 -80 -48 0 0
+ ( -176 -184 32 ) ( -152 -184 32 ) ( -152 -184 16 ) trigger 64 64 -80 0 0 0 lightmap_gray 16384 16384 -80 0 0 0
+ ( 184 144 32 ) ( 184 168 32 ) ( 184 168 16 ) trigger 64 64 48 0 0 0 lightmap_gray 16384 16384 48 0 0 0
+ ( -160 184 32 ) ( -184 184 32 ) ( -184 184 16 ) trigger 64 64 -80 0 0 0 lightmap_gray 16384 16384 -80 0 0 0
+ ( -184 184 32 ) ( -184 160 32 ) ( -184 160 16 ) trigger 64 64 48 0 0 0 lightmap_gray 16384 16384 48 0 0 0
+}
+}
+// entity 14
+{
+"target" "intermission"
+"origin" "-128.0 0.0 72.0"
+"speed" "10"
+"targetname" "intermission"
+"angles" "0 90 0"
+"classname" "script_struct"
+}
+// entity 15
+{
+"origin" "128.0 0.0 72.0"
+"speed" "10"
+"targetname" "intermission"
+"angles" "0 90 0"
+"classname" "script_struct"
+}
+// entity 16
+{
+"origin" "0.0 0.0 104.0"
+"def" "light_point_linear"
+"radius" "500"
+"_color" "1 1 1"
+"intensity" "1"
+"classname" "light"
+}
+// entity 17
+{
+"origin" "-128.0 -128.0 40.0"
+"classname" "node_pathnode"
+}
+// entity 18
+{
+"origin" "0.0 -128.0 40.0"
+"classname" "node_pathnode"
+}
+// entity 19
+{
+"origin" "128.0 -128.0 40.0"
+"classname" "node_pathnode"
+}
+// entity 20
+{
+"origin" "-128.0 0.0 40.0"
+"classname" "node_pathnode"
+}
+// entity 21
+{
+"origin" "0.0 0.0 40.0"
+"classname" "node_pathnode"
+}
+// entity 22
+{
+"origin" "128.0 0.0 40.0"
+"classname" "node_pathnode"
+}
+// entity 23
+{
+"origin" "-128.0 128.0 40.0"
+"classname" "node_pathnode"
+}
+// entity 24
+{
+"origin" "0.0 128.0 40.0"
+"classname" "node_pathnode"
+}
+// entity 25
+{
+"origin" "128.0 128.0 40.0"
+"classname" "node_pathnode"
+}
+// entity 26
+{
+"origin" "0.0 -56.0 44.0"
+"angles" "0 90 0"
+"classname" "info_player_start"
+}

@@ -1,0 +1,10 @@
+{
+	map			"mak"
+	longname	"MENU_LEVEL_MAK"
+	gametype	"cmp arc"
+}
+{
+	map			"UGX_SCRIPTPLACER_MAPNAME"
+	longname	"UGX_SCRIPTPLACER_DISPLAY"
+	gametype	"zom"
+}

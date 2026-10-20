@@ -1,0 +1,27 @@
+iwmap 4
+"000_Global" flags expanded  active
+"000_Global/Electric Traps" flags 
+"000_Global/Hell Hounds" flags 
+"000_Global/Pack A Punch" flags 
+"000_Global/Pandora Boxes" flags 
+"000_Global/Perks" flags 
+"000_Global/Power Switch" flags 
+"000_Global/Teleporter Room" flags 
+"000_Global/Teleporter Wires" flags 
+"The Map" flags 
+// entity 0
+{
+"sunradiosity" "0.8"
+"origin" "0 0 0"
+"spawnflags" "512"
+"skyboxmodel" "skybox_zombie_factory"
+"sunisprimarylight" "1"
+"_color" "0.2 0.45 1"
+"ambient" "0.1"
+"sundiffusecolor" "0.75 0.75 0.75"
+"diffusefraction" "0.2"
+"classname" "worldspawn"
+"sundirection" "-146.5 311.8 0"
+"suncolor" "0.635294 0.85098 1"
+"sunlight" ".75"
+}

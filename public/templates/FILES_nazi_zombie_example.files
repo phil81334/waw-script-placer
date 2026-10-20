@@ -1,0 +1,9 @@
+maps\UGX_SCRIPTPLACER_MAPNAME.gsc
+maps\_loadout.gsc
+maps\mapsTable.csv
+maps\createfx\UGX_SCRIPTPLACER_MAPNAME_fx.gsc
+maps\createart\UGX_SCRIPTPLACER_MAPNAME_art.gsc
+clientscripts\createfx\UGX_SCRIPTPLACER_MAPNAME_fx.csc
+clientscripts\UGX_SCRIPTPLACER_MAPNAME.csc
+clientscripts\UGX_SCRIPTPLACER_MAPNAME_amb.csc
+mod.arena
