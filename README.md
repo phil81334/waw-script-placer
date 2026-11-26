@@ -1,8 +1,8 @@
 # WaW Script Placer
 
-**An unofficial community app. Not affiliated with Treyarch, Activision or UGX.**
+Create starter mods and maps for World at War, or review and remove a map’s files from the Delete tab. Made by [phil81334](https://github.com/phil81334). Built with JavaScript, Rust, Vite and Tauri.
 
-A starter mod/map creator for World at War, with UGX Script Placer 2.0.1 General generation and a Delete tab for cleaning up maps. Made by [phil81334](https://github.com/phil81334), a community member, for the community. Built with JavaScript, Rust, Vite and Tauri.
+WaW Script Placer is not affiliated with Treyarch, Activision or any modding community.
 
 ![WaW Script Placer creating a map from a custom map source](images/waw-script-placer.png)
 
@@ -12,7 +12,7 @@ More screenshots: [Expanded file lists](images/waw-script-placer-delete-tab-full
 
 ## Download and run
 
-1. Have World at War, its Modtools and the UGX patch installed in the same game folder.
+1. Have World at War, its Modtools and the [required Modtools patch](ATTRIBUTION.md#required-modtools-patch) installed in the same game folder.
 2. Open [Releases](https://github.com/phil81334/waw-script-placer/releases/latest). Under **Assets**, download **waw-script-placer.exe**. The source-code ZIP is for development.
 3. Put the EXE in the folder containing `CoDWaW.exe`, then double-click it.
 
@@ -22,17 +22,11 @@ You do not need Node.js, Rust or VS Code to use the EXE. Windows needs [WebView2
 
 Open **Generate**, enter a map name, choose **Blank**, **Setup** or a **Custom** `.map`, then click **Generate**. Display name is optional; leaving it empty uses the map name. Open `map_source/mapname.map` in Radiant, using your chosen map name.
 
-### How does this differ from UGX Script Placer 2.0.1?
+### Starter files and existing maps
 
-**General generation is 1:1: the same 18 starter files, the same contents and the same map-name/display-name substitutions.** Blank, Setup and Custom work from the same starter resources. This is not a modified starter pack.
+Blank, Setup and Custom use the same 18 starter files. Generation substitutes the map name and display name. Across the three modes, all 54 generated files matched the original starter outputs after accounting for map names.
 
-The UI is new, and overwrite handling is fixed: **Skip** leaves the existing file untouched, **Replace** replaces it, and **Back Up + Replace** keeps a backup first.
-
-**Blue = included. Red = left out.** No FX options, Menu options, UGX-MOD installation, patch installer or registry settings.
-
-![UGX Script Placer: General and Generate outlined in blue; excluded features tinted red](images/ugx-script-placer.png)
-
-Checked against actual UGX-generated Blank, Setup and Custom outputs: all 54 files matched after accounting for the different map names.
+If a file already exists, **Skip** keeps it, **Replace** overwrites it, and **Back Up + Replace** saves a backup first. The generator covers the General options. FX, menu setup and patch installation are outside its scope.
 
 ## Delete a map
 
@@ -74,12 +68,13 @@ Development generates and deletes test files inside `.local/test-root`, includin
 | --- | --- |
 | `npm run dev` | Opens the desktop app for development. |
 | `npm run dev:web` | Shows the UI in a browser. Cannot generate, scan or delete map files. |
-| `npm run build` | Creates `release/waw-script-placer.exe`. |
+| `npm run build` | Creates `release/vX.Y.Z/waw-script-placer.exe`. |
 | `npm run build:web` | Builds the UI files only. No EXE. |
 
-To make your own EXE, run `npm run build`, then copy `release/waw-script-placer.exe` beside `CoDWaW.exe` in your prepared game folder.
+The version folder matches `package.json`. If that version is already archived, the build prints the location of your newly compiled EXE.
 
-Starter templates come from [UGX Script Placer 2.0.1](https://www.ugx-mods.com/forum/applications-and-tools/36/app-ugx-script-placer-2-0-1-beta-now-with-ugx-mod-compatibility/4221/). See [ATTRIBUTION.md](ATTRIBUTION.md) for credits.
+To make your own EXE, run `npm run build`, then copy `release/vX.Y.Z/waw-script-placer.exe` beside `CoDWaW.exe` in your prepared game folder.
+
+[Starter template credits and source](ATTRIBUTION.md)
 
 Original app code: [GPL-3.0 licence](LICENSE). Starter templates retain their existing terms.
-

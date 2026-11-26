@@ -1,5 +1,5 @@
 import { spawn } from 'node:child_process';
-import { copyFileSync, mkdirSync } from 'node:fs';
+import { copyFileSync, existsSync, mkdirSync, readFileSync } from 'node:fs';
 import { delimiter, dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { homedir } from 'node:os';
@@ -43,12 +43,18 @@ child.on('exit', (code) => {
   // Put the finished portable app in one easy-to-find folder.
   if (code === 0 && command === 'build') {
     try {
-      mkdirSync(resolve(root, 'release'), { recursive: true });
-      copyFileSync(
-        resolve(root, 'src-tauri/target/release/waw-script-placer.exe'),
-        resolve(root, 'release/waw-script-placer.exe'),
-      );
-      console.log('Ready: release/waw-script-placer.exe');
+      const { version } = JSON.parse(readFileSync(resolve(root, 'package.json'), 'utf8'));
+      const versionDir = resolve(root, 'release', `v${version}`);
+      const executable = resolve(versionDir, 'waw-script-placer.exe');
+      const builtExecutable = resolve(root, 'src-tauri/target/release/waw-script-placer.exe');
+      if (existsSync(resolve(versionDir, 'release-info.md')) && existsSync(executable)) {
+        console.log(`Release v${version} is already archived. Your new build is at ${builtExecutable}`);
+        return;
+      }
+
+      mkdirSync(versionDir, { recursive: true });
+      copyFileSync(builtExecutable, executable);
+      console.log(`Ready: ${executable}`);
     } catch (error) {
       console.error(
         `Could not copy the executable to release: ${error.message}`,
