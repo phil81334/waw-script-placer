@@ -7,6 +7,7 @@ import { homedir } from 'node:os';
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const [command, ...args] = process.argv.slice(2);
 const env = { ...process.env };
+env.CARGO_TARGET_DIR = resolve(root, env.CARGO_TARGET_DIR || 'src-tauri/target');
 
 // Also works in terminals opened before Rust was installed.
 const pathKey =
@@ -46,9 +47,13 @@ child.on('exit', (code) => {
       const { version } = JSON.parse(readFileSync(resolve(root, 'package.json'), 'utf8'));
       const versionDir = resolve(root, 'release', `v${version}`);
       const executable = resolve(versionDir, 'waw-script-placer.exe');
-      const builtExecutable = resolve(root, 'src-tauri/target/release/waw-script-placer.exe');
+      const builtExecutable = resolve(env.CARGO_TARGET_DIR, 'release', 'waw-script-placer.exe');
       if (existsSync(resolve(versionDir, 'release-info.md')) && existsSync(executable)) {
-        console.log(`Release v${version} is already archived. Your new build is at ${builtExecutable}`);
+        const rebuildDir = versionDir + '-rebuild';
+        const rebuiltExecutable = resolve(rebuildDir, 'waw-script-placer.exe');
+        mkdirSync(rebuildDir, { recursive: true });
+        copyFileSync(builtExecutable, rebuiltExecutable);
+        console.log(`Ready: ${rebuiltExecutable}`);
         return;
       }
 

@@ -71,9 +71,9 @@ Development generates and deletes test files inside `.local/test-root`, includin
 | `npm run build` | Creates `release/vX.Y.Z/waw-script-placer.exe`. |
 | `npm run build:web` | Builds the UI files only. No EXE. |
 
-The version folder matches `package.json`. If that version is already archived, the build prints the location of your newly compiled EXE.
+The version folder matches `package.json`. Rebuilding an archived version writes the new EXE to `release/vX.Y.Z-rebuild/waw-script-placer.exe`.
 
-To make your own EXE, run `npm run build`, then copy `release/vX.Y.Z/waw-script-placer.exe` beside `CoDWaW.exe` in your prepared game folder.
+To make your own EXE, run `npm run build`, then copy the EXE from the path printed by the build beside `CoDWaW.exe` in your prepared game folder.
 
 [Starter template credits and source](ATTRIBUTION.md)
 
